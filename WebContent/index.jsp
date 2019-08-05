@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>Hello World!</h1>
-	<a href="/Udemy_Servlets_JSPs/HolaMundo">Servlet</a>
-
+	<a href="/Udemy_Servlets_JSPs/HolaMundo">Servlet 1</a>
+	<a href="/Udemy_Servlets_JSPs/HolaMundoServlets">Servlet 2</a>
 </body>
 </html>
