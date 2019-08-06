@@ -30,9 +30,6 @@
 		<input type="password" name="password" value="" />
 		<br>
 		<input type="submit" value="Enviar" />
-
-
-
 	</form>
 </body>
 </html>
