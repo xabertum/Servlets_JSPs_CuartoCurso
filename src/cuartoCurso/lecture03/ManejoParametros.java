@@ -34,8 +34,13 @@ public class ManejoParametros extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		
+		String usuarioString = request.getParameter("usuario");
+		String passwordString = request.getParameter("password");
+		
+		response.getWriter().append("El parametro usuario es: " + usuarioString);
+		response.getWriter().append("El parametro password es: " + passwordString);
+		
 	}
 
 }
