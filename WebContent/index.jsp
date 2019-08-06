@@ -22,7 +22,7 @@
 	</ul>
 
 	<h1>Formulario Servlets</h1>
-	<form name="formularioManejoParam" action="/Udemy_servlets_JSPs/ManejoParametros" method="post">
+	<form name="formularioManejoParam" action="/Udemy_Servlets_JSPs/ManejoParametros" method="post">
 		Usuario:
 		<input type="text" name="usuario" />
 		<br>
