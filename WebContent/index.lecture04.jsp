@@ -11,8 +11,7 @@
 	<h1>Lecture04</h1>
 	<form onsubmit="return validarForma(this);" name="formulario1" method="post" action="Udemy_Servlets_JSPs/ManejoFormulariosHTML">
 		<input type="hidden" name="oculto" value="valorOculto" />
-		<table width="200" id="one-colum-empahsis">
-
+		<table id="one-colum-empahsis" border="1">
 			<caption>Formulario Registro de Datos</caption>
 			<tr>
 				<td class="oce-first">Usuario: (*)</td>
@@ -27,15 +26,14 @@
 				</td>
 			</tr>
 			<tr>
+				<td class="oce-first">Tecnologia: </td>
 				<td>
-
 					Java
 					<input type="checkbox" name="tecnologia" value="java" />
 					.Net
 					<input type="checkbox" name="tecnologia" value="net" />
 					PHP
 					<input type="checkbox" name="tecnologia" value="php" />
-
 				</td>
 			</tr>
 
@@ -44,8 +42,6 @@
 				<td>
 					Hombre:
 					<input type="radio" name="genero" value="H" />
-				</td>
-				<td>
 					Mujer:
 					<input type="radio" name="genero" value="M" />
 				</td>
@@ -53,7 +49,7 @@
 			<tr>
 				<td class="oce-first">Ocupacion: (*)</td>
 				<td>
-					<select name="ocupacion" class=default"">
+					<select name="ocupacion" class="default">
 						<option value="">Seleccionar</option>
 						<option value="1">Profesor</option>
 						<option value="2">Ingeniero</option>
@@ -72,22 +68,18 @@
 					</select>
 				</td>
 			</tr>
-
 			<tr>
 				<td class="oce-first">Comentarios</td>
 				<td>
 					<textarea name="comentarios" class="default" cols="30" rows="10" onfocus="this.select();">Escribir un texto</textarea>
 				</td>
 			</tr>
-			
-			<tr>
-				
-			
+
+			<tr style="text-align: center">
+				<td><input type="reset" class="default" value="Limpiar" /></td>
+				<td><input type="submit" class="default" value="Enviar" /></td>
 			</tr>
-
 		</table>
-
-
 	</form>
 </body>
 </html>
