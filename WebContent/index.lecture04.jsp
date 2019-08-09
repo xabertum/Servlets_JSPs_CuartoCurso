@@ -34,7 +34,7 @@
 					.Net
 					<input type="checkbox" name="tecnologia" value="net" />
 					PHP
-					<input type="checbox" name="tecnologia" value="php" />
+					<input type="checkbox" name="tecnologia" value="php" />
 
 				</td>
 			</tr>
