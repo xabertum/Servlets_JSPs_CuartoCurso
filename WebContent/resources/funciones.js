@@ -7,7 +7,7 @@ function validarForma(forma) {
 
 	// Validamos el usuario
 	var usuario = forma.usuario;
-	if (usuario.value == "" || usuario.value == "Escribir usuario") {
+	if (usuario.value == "" || usuario.value == "Introducir Usuario") {
 		alert("Debe introducir un usario valido")
 		usuario.focus();
 		usuario.select();
