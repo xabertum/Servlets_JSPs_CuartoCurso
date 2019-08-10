@@ -1,6 +1,7 @@
 package cuatroCurso.lecture04;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,15 +29,34 @@ public class ManejoFormulariosHTML extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		String usuario = request.getParameter("usuario");
 		String password = request.getParameter("password");
 		String[] tecnologias = request.getParameterValues("tecnologia");
 		String genero = request.getParameter("genero");
 		String ocupacion = request.getParameter("ocupacion");
-		String [] musicaStrings = request.getParameterValues("musica");
-		
-		
+		String[] musicaStrings = request.getParameterValues("musica");
+		String comentario = request.getParameter("comentarios");
+
+		response.getWriter().append("El usuario es: " + usuario);
+		response.getWriter().append("El password es: " + password);
+		PrintWriter outPrintWriter = response.getWriter();
+
+		for (String tecnologia : tecnologias) {
+			outPrintWriter.append(tecnologia);
+			outPrintWriter.append("/");
+		}
+
+		response.getWriter().append("El genero seleccionado es: " + genero);
+		response.getWriter().append("La ocupacion seleccionada es: " + ocupacion);
+
+		for (String musica : musicaStrings) {
+			response.getWriter().append(musica);
+			response.getWriter().append("/");
+		}
+
+		response.getWriter().append("El comentario es: " + comentario);
+
 	}
 
 }
