@@ -38,8 +38,8 @@ public class ManejoFormulariosHTML extends HttpServlet {
 		String[] musicaStrings = request.getParameterValues("musica");
 		String comentario = request.getParameter("comentarios");
 
-		response.getWriter().append("El usuario es: " + usuario);
-		response.getWriter().append("El password es: " + password);
+		response.getWriter().append("El usuario es: " + usuario + "\n");
+		response.getWriter().append("El password es: " + password + "\n");
 		PrintWriter outPrintWriter = response.getWriter();
 
 		for (String tecnologia : tecnologias) {
@@ -47,15 +47,15 @@ public class ManejoFormulariosHTML extends HttpServlet {
 			outPrintWriter.append("/");
 		}
 
-		response.getWriter().append("El genero seleccionado es: " + genero);
-		response.getWriter().append("La ocupacion seleccionada es: " + ocupacion);
+		response.getWriter().append("El genero seleccionado es: " + genero + "\n");
+		response.getWriter().append("La ocupacion seleccionada es: " + ocupacion + "\n");
 
 		for (String musica : musicaStrings) {
 			response.getWriter().append(musica);
 			response.getWriter().append("/");
 		}
 
-		response.getWriter().append("El comentario es: " + comentario);
+		response.getWriter().append("El comentario es: " + comentario + "\n");
 
 	}
 
