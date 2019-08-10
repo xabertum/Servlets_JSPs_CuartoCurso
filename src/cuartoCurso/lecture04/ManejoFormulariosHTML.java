@@ -1,4 +1,4 @@
-package cuatroCurso.lecture04;
+package cuartoCurso.lecture04;
 
 import java.io.IOException;
 import java.io.PrintWriter;
