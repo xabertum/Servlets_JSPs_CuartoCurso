@@ -1,0 +1,42 @@
+body, .default {
+	line-height: 1.6em;
+	font-size: 12px;
+	font-family: 'Courier New', Courier, monospace;
+	color: #666699;
+}
+
+#one-colum-emphasis {
+	margin: 45px;
+	width: 450px;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+#one-colum-emphasis caption {
+	font-size: 20px;
+}
+
+#one-colum-emphasis th {
+	font-size: 14px;
+	font-weight: normal;
+	padding: 12px 15px;
+	color: #003399;
+}
+
+#one-colum-emphasis td {
+	padding: 10px 15px;
+	color: #666699;
+	border-top: 1px solid #e8edff;
+}
+
+.oce-first {
+	background: #d0dafd;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+}
+
+#one-colum-emphasis tr:hover td {
+	color: #333399;
+	background: #eff2ff;
+}
+
