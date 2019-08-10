@@ -23,23 +23,20 @@ public class ManejoFormulariosHTML extends HttpServlet {
 	}
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
-	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		
+		String usuario = request.getParameter("usuario");
+		String password = request.getParameter("password");
+		String[] tecnologias = request.getParameterValues("tecnologia");
+		String genero = request.getParameter("genero");
+		String ocupacion = request.getParameter("ocupacion");
+		String [] musicaStrings = request.getParameterValues("musica");
+		
+		
 	}
 
 }
