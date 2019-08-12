@@ -38,7 +38,7 @@ public class ServletsHeaders extends HttpServlet {
 			String uriString = request.getRequestURI();
 
 			response.getWriter().append("El metodo HTTP es: " + metodoHttpString + "\n");
-			response.getWriter().append("EL URI solicitado es: " + uriString + "\n");
+			response.getWriter().append("El URI solicitado es: " + uriString + "\n");
 			response.getWriter().append("Host" + request.getHeader("Host") + "\n");
 			response.getWriter().append("Navegador: " + request.getHeader("User-Agent") + "\n");
 
