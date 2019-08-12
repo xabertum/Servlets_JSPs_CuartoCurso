@@ -1,6 +1,8 @@
 package cuartoCurso.lecture06;
 
 import java.io.IOException;
+import java.util.Enumeration;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,16 +28,31 @@ public class ServletsHeaders extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		response.setContentType("text/html;cahrset=UTF-8");
+		
+		try {
+			String metodoHttpString = request.getMethod();
+			String uriString = request.getRequestURI();
+			
+			response.getWriter().append("El metodo HTTP es: " + metodoHttpString + "/n");
+			response.getWriter().append("EL URI solicitado es: " + uriString + "/n");
+			response.getWriter().append("Host" + request.getHeader("Host") + "/n");
+			response.getWriter().append("Navegador: " + request.getHeader("User-Agent") + "/n");
+			
+			Enumeration<?> cabecerosEnumeration = request.getHeaderNames();
+			while (cabecerosEnumeration.hasMoreElements()) {
+				String nombreCabecero = (String) cabecerosEnumeration.nextElement();
+				response.getWriter().append("<b>" + nombreCabecero + "</b>" +"\n");
+				response.getWriter().append(request.getHeader(nombreCabecero) +"\n");				
+			}			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
-	}
+	
 
 }
