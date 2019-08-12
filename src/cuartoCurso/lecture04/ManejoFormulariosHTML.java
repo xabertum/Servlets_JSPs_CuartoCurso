@@ -47,6 +47,8 @@ public class ManejoFormulariosHTML extends HttpServlet {
 			outPrintWriter.append("/");
 		}
 
+		response.getWriter().append("\n");
+		
 		response.getWriter().append("El genero seleccionado es: " + genero + "\n");
 		response.getWriter().append("La ocupacion seleccionada es: " + ocupacion + "\n");
 
@@ -55,6 +57,8 @@ public class ManejoFormulariosHTML extends HttpServlet {
 			response.getWriter().append("/");
 		}
 
+		response.getWriter().append("\n");
+		
 		response.getWriter().append("El comentario es: " + comentario + "\n");
 
 	}
