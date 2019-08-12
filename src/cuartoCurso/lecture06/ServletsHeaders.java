@@ -29,7 +29,7 @@ public class ServletsHeaders extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		response.setContentType("text/html;cahrset=UTF-8");
+		response.setContentType("text/html;charset=UTF-8");
 		
 		try {
 			String metodoHttpString = request.getMethod();
@@ -43,8 +43,8 @@ public class ServletsHeaders extends HttpServlet {
 			Enumeration<?> cabecerosEnumeration = request.getHeaderNames();
 			while (cabecerosEnumeration.hasMoreElements()) {
 				String nombreCabecero = (String) cabecerosEnumeration.nextElement();
-				response.getWriter().append("<b>" + nombreCabecero + "</b>" +"\n");
-				response.getWriter().append(request.getHeader(nombreCabecero) +"\n");				
+				response.getWriter().append("<b>" + nombreCabecero + "</b>" +"/n");
+				response.getWriter().append(request.getHeader(nombreCabecero) +"/n");				
 			}			
 			
 		} catch (Exception e) {
