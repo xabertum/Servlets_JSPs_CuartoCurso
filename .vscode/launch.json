@@ -1,5 +1,13 @@
 {    
     "version": "0.2.0",
     "configurations": [
-    ]
+    
+{
+  "name": "Launch Chrome localhost",
+  "type": "chrome",
+  "request": "launch",
+  "port": 9205,
+  "webRoot": "${workspaceFolder}",
+  "url": "http://localhost:8080/Udemy_Servlets_JSPs/index.lecture10.html"
+}]
 }
