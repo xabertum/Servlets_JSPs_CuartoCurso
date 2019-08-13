@@ -52,7 +52,7 @@ public class ContadorVisitasCookies extends HttpServlet {
 		// incrementamos el contador de visitas
 		// y lo agregamos a la cookie en la respuesta
 		contador++;
-		Cookie cookie = new Cookie("contadorVisitas", Integer.parseInt(contador));
+		Cookie cookie = new Cookie("contadorVisitas", Integer.toString(contador));
 
 		// La cookie se almacenará en el cliente por 1 hora
 		cookie.setMaxAge(3600);
