@@ -51,8 +51,8 @@ public class HttpSession extends HttpServlet {
 		session.setAttribute("contadorVisitas", contadorVisitas);
 
 		// Mostramos los valores en el cliente
-		response.getWriter().print("Titulo: " + tituloString);
-		response.getWriter().print("Numero de accesos al recurso: " + contadorVisitas);
+		response.getWriter().write("Titulo: " + tituloString + "\n");
+		response.getWriter().print("Numero de accesos al recurso: " + contadorVisitas + "\n");
 		response.getWriter().print("ID de la session: " + session.getId());
 
 	}
