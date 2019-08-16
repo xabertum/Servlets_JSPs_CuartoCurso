@@ -6,7 +6,7 @@
 <title>Ejemplo de Expresiones en JSP</title>
 </head>
 <body>
-	<h1>JSP de epxresiones</h1>
+	<h1>JSP de expresiones</h1>
 	Concatenación:
 	<%="Saludos" + "JSP"%><br>
 	Operacion:
