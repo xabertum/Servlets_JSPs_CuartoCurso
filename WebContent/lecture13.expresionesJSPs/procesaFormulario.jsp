@@ -15,6 +15,6 @@
 		Password:
 		<%=request.getParameter("password")%>
 	</p>
-	<a href="index.htlm">Regresar al inicio</a>
+	<a href="index.html">Regresar al inicio</a>
 </body>
 </html>
