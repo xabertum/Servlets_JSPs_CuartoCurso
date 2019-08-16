@@ -9,7 +9,7 @@
 	<h1>Proceso de Formulario</h1>
 	<p>
 		Usuario:
-		<%=request.getParameter("Usuario")%>
+		<%=request.getParameter("usuario")%>
 	</p>
 	<p>
 		Password:
