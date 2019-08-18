@@ -24,12 +24,16 @@
 	<br />
 
 	<!-- Ejemplo de una expresion -->
-	<p>Expresión Matemática: <%= 2*3 %></p>
-	
+	<p>
+		Expresión Matemática:
+		<%=2 * 3%></p>
+
 	<!-- Ejemplo de un scriplet -->
-	<jsp:scriptlet> String nombreAplicacion = request.getContextPath();</jsp:scriptlet>
-	<p>Nombre de apliación: <%= nombreAplicacion %></p>
-	<p><%= this.contadorVisitas++ %></p>	
+	<jsp:scriptlet>String nombreAplicacion = request.getContextPath();</jsp:scriptlet>
+	<p>
+		Nombre de apliación:
+		<%=nombreAplicacion%></p>
+	<p><%=this.contadorVisitas++%></p>
 
 </body>
 	</html>
