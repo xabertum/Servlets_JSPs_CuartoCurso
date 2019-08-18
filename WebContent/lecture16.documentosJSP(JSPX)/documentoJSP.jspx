@@ -8,14 +8,14 @@
 		<![CDATA[ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> ]]>
 	</jsp:text>
 	<!-- Uso de declaraciones -->
-	<jsp:declaration>private int contadorVisitas = 1;</jsp:declaration>>
+	<jsp:declaration>private int contadorVisitas = 1;</jsp:declaration>
 	
 	<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Insert title here</title>
 </head>
-<body bgcolor="yelow">
+<body bgcolor="yellow">
 	<h1>Ejemplo de un Documento JSPx</h1>
 
 	<!-- Ejemplo de salida de un texto -->
@@ -26,14 +26,14 @@
 	<!-- Ejemplo de una expresion -->
 	<p>
 		Expresión Matemática:
-		<%=2 * 3%></p>
+		<jsp:expression>2 * 3</jsp:expression></p>
 
 	<!-- Ejemplo de un scriplet -->
 	<jsp:scriptlet>String nombreAplicacion = request.getContextPath();</jsp:scriptlet>
 	<p>
 		Nombre de apliación:
-		<%=nombreAplicacion%></p>
-	<p><%=this.contadorVisitas++%></p>
+		<jsp:expression>nombreAplicacion</jsp:expression></p>
+	<p><jsp:expression>" Contador de visitas "+ this.contadorVisitas++</jsp:expression></p>
 
 </body>
 	</html>
