@@ -28,7 +28,5 @@
 	<p>
 		Contador de visitas desde que se reiniió el servidor:
 		<%=this.contadorVisitas++%></p>
-
-
 </body>
 </html>
